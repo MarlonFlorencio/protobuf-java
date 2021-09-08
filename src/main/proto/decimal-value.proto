@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package marlonflorencio.proto;
+
+option java_multiple_files = true;
+option java_package = "com.github.marlonflorencio.protobuf.proto";
+
+message DecimalValue {
+  uint32 scale = 1;
+  uint32 precision = 2;
+  bytes value = 3;
+}
